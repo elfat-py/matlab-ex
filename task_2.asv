@@ -1,0 +1,40 @@
+ % TASK 2
+
+%Task 2.4
+%The assigned task:
+%Draw the graph of two polynomials in same plot 𝑥 = [−10, 10] 𝑎𝑛𝑑 𝑠𝑡𝑒𝑝 𝑠𝑖𝑧𝑒 𝑖𝑠 0.01
+% First polynomial: f(x) = 3x^4 + 2x^3 + 7x^2 + 2x + 9
+% Second polynomial: g(x) = 5x^3 + 9x + 2
+%{
+first_function = '3x^4 + 2x^3 + 7x^2 + 2x + 9';
+second_function = '5x^3 + 9x + 2';
+first_pol = [3 2 7 2 9];
+second_pol = [5 0 9 2];
+
+x = -10:0.01:10; % Generate points from -10 to 10 with a step size of 0.01
+y1 = polyval(first_pol, x);
+y2 = polyval(second_pol, x);
+
+plot(x, y1, 'r', 'DisplayName', first_function); % Plot the first polynomial in red
+hold on; % Hold the current plot
+plot(x, y2, 'b', 'DisplayName', second_function); % Plot the second polynomial in blue
+hold off; % Release the hold
+xlabel('x');
+ylabel('y');
+title('Plot of the polynomials f(x) = 3x^4 + 2x^3 + 7x^2 + 2x + 9 && g(x) = 5x^3 + 9x + 2');
+% Display the legend (this is to show which color belongs to which function)
+legend show;
+% Adding the grid 
+grid on;
+%}
+
+
+%Task 2.5
+%The assigned task:
+% Use matrices to solve the equations: (Hint: linsolve(A, B)) your code is here: 2x + 3y = 11 && -3x - 4y = -13
+% We are going to represent the system of equations in the form: AX = B
+
+% Defing matrix A
+A = [2, 3; -3, -4];
+B = [11, 13]
+
