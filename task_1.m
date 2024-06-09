@@ -26,7 +26,7 @@ plot(x, y); % This will GENERATE AN ERROR(SYNTAX ERROR) matlab will interpret pl
 %The assigned task:
 %Plot the polynomial 𝟒𝒙^3 − 𝟑𝒙 using the function polyval. First find out how to use polyval using help
 %{
-ON COMMAND WINDOW PASS 'doc polyval p' command to get the documentation
+%ON COMMAND WINDOW PASS 'doc polyval p' command to get the documentation
 y = polyval(p,x) evaluates the polynomial p at each point in x. The argument p is a vector of length n+1 whose elements are the coefficients (in descending powers) of an nth-degree polynomial:
 The polynomial coefficients in p can be calculated for different purposes by functions like polyint, polyder, and polyfit, but you can specify any vector for the coefficients.
 To evaluate a polynomial in a matrix sense, use polyvalm instead.

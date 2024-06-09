@@ -62,7 +62,6 @@ fprintf('Length of w[n]: %d\n', length(w));
 
 
 %Task 4
-%{
 % Define the frequencies and phases
 f1 = 60;
 f2 = 340;
@@ -134,8 +133,6 @@ title('Sampled Signal x3[n]');
 xlabel('Time (s)');
 ylabel('Amplitude');
 grid on;
-
-%}
 
 
 

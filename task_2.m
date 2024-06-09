@@ -33,7 +33,7 @@ grid on;
 %The assigned task:
 % Use matrices to solve the equations: (Hint: linsolve(A, B)) your code is here: 2x + 3y = 11 && -3x - 4y = -13
 % We are going to represent the system of equations in the form: AX = B
-
+%{
 A = [2 3; -3 -4];
 B = [11; -13];
 X = linsolve(A, B);
@@ -44,3 +44,4 @@ y = X(2);
 disp(['x = ', num2str(x)]);
 disp(['y = ', num2str(y)]);
 
+%}
